@@ -1,0 +1,195 @@
+html,
+body,
+.cover {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+}
+
+#Kratom-img {
+  margin-bottom: 30px;
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+
+}
+
+#benefitsPhoto {
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+}
+
+#learnMore {
+  background-color: #3FBF6B;
+  border-color: #3FBF6B;
+  color: #444;
+}
+
+.contact{
+margin-top: 20px;
+
+}
+
+
+h3 {
+  font-size: 30px;
+  color: #3FBF6B;
+}
+
+h2 {
+  font-size: 48px;
+  color: #3FBF6B;
+}
+
+h5 {
+  color: #3FBF6B;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  color: black;
+}
+
+.green {
+  color: #3FBF6B;
+}
+
+.btn-success {
+  background-color: #3FBF6B;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbartop {
+  background-color: #3FBF6B;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.home-text{
+  margin-top: 20px;
+}
+
+.navbar li {
+  display: inline;
+  padding: 0px 15px;
+}
+
+#logo {
+  height: 400px;
+  width: auto;
+}
+
+.fa-arrow-down {
+  color: #3FBF6B;
+}
+
+.fa-arrow-down:hover {
+  background-color: rgb(17, 19, 18, 0.7);
+  color: whitesmoke;
+}
+
+.img1 {
+  height: 325px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.card {
+  border: none !important;
+  border-radius: 5px;
+  background-color: whitesmoke
+}
+
+.cardproducts:hover {
+  opacity: .5;
+}
+
+#learn-button {
+  text-align: center;
+}
+
+.site-footer {
+  margin-top: 20px;
+  background-color: #3FBF6B;
+  padding: 20px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-links {
+  color: #434e52;
+}
+
+.contactUs {
+ margin-top: 40px;
+}
+
+#contactForm {
+  background-color: #3FBF6B;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.bussinessHours {
+  font-family: "Montserrat", sans-serif;
+}
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb a {
+  color: #434e52
+}
+
+.breadcrumb-color {
+
+  color: #35495e;
+  font-style: italic;
+}
+
+.modal-body {
+  background-color: #3FBF6B;
+}
+
+.modal-header {
+  background-color: #3FBF6B;
+}
+
+.modal-title {
+  color: black;
+}
+
+#owner {
+  border-radius: 100%;
+  height: 50%;
+  border-style: solid;
+
+}
+
+.testimonial {
+  background-color: #3FBF6B;
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+}
+
+.h1-responsive {
+  color: black;
+}
+
+/*.car-butt {
+  background-color: green;
+}*/
