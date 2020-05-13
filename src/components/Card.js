@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import {
     Card,
     CardImg,
-    CardImgOverlay,
-    CardTitle,
+  
     Modal, ModalHeader, ModalBody, Button,
-    Form, FormGroup, Input, Label
+    Form, FormGroup, 
 } from "reactstrap";
-import Powderinfo from "./PowderInfo";
+
 
 
 
@@ -80,12 +79,8 @@ class Cardpowder extends Component {
            
             <div className="container">
                 <div className="row">{ powder }</div>
-                <Powderinfo powder={this.state.selectedPowder} />
                 
-                        
-                        
-                        
-                        <Modal isOpen={this.state.isModalOpen} >
+                    <Modal isOpen={this.state.isModalOpen} >
                             <ModalHeader toggle={this.toggleModal} >Product Info</ModalHeader>
                             <ModalBody>
 

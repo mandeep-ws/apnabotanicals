@@ -34,15 +34,11 @@ class Main extends Component {
                 <Header />
                 <Switch>
                    
-                    <Route exact path="/home" render={() => <Home />} />
+                    <Route exact path="/home" render={() => <Home powders={this.state.powders} />} />
                     <Route exact path="/powder" render={() => <Cardpowder powders={this.state.powders} /> } />
                     <Route exact path="/capsules" render={() => <Cardcapsule capsules={this.state.capsules} />} />
-
                     <Route exact path="/contact" render={() => <Contact />} />
-                    
                     <Redirect to="/home" />
-                   
-                
                 </Switch>
                 <Footer />
             </div>

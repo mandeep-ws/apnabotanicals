@@ -3,10 +3,7 @@ import {
     Card,
     CardImg,
     CardImgOverlay,
-    CardText,
-    CardTitle,
-    Modal, ModalHeader, ModalBody, Button,
-    Form, FormGroup, Input, Label
+ 
 } from "reactstrap";
 
 

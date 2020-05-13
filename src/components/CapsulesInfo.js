@@ -3,8 +3,7 @@ import {
     Card,
     CardImg,
     CardImgOverlay,
-    CardText,
-    CardTitle
+
 } from "reactstrap";
 
 
