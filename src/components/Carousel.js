@@ -44,7 +44,7 @@ function CompCar(){
             onExiting={() => setAnimating(true)}
             onExited={() => setAnimating(false)}
           >
-              <img src={item.image}  alt="" width="20%" height="400px" className= "mt-3"></img>
+              <img src={item.image}  alt="" width="30%" height="30%" className= "mt-4 mb-4"></img>
             <CarouselCaption className="custom-caption" captionText={item.description} captionHeader={item.name} />
           </CarouselItem>
         );
@@ -53,13 +53,12 @@ function CompCar(){
 
  
       return (
-        <div className="mt-4 mb-4 text-center ">
+        <div className="mt-5 mb-5 text-center">
           <style>
             {
               `.custom-tag {
-                  max-width: 100%;
-                  height: 470px;
-                  background: #3FBF6B;
+                max-width: 100%;
+                 background: #e7f0c3;
                 }`
             }
           </style>

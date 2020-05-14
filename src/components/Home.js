@@ -5,6 +5,7 @@ import {
     Modal, ModalHeader, ModalBody,
     Form, FormGroup
 } from 'reactstrap';
+import CompCar from './Carousel'
 
 
 
@@ -44,7 +45,7 @@ class Home extends Component {
             return (
 
                 <div key={product.id} >
-                    <li  className="list-group-item"  onClick={() =>{ this.onProductSelect( product ); this.toggleModal()}} onMouseEnter={(e) => {e.target.style.background = "#3FBF6B"}} onMouseOut={(e) => {e.target.style.background = " whitesmoke"}}>
+                    <li  className="list-group-item"  onClick={() =>{ this.onProductSelect( product ); this.toggleModal()}} onMouseEnter={(e) => {e.target.style.background = "#3FBF6B"}} onMouseOut={(e) => {e.target.style.background = " #e7f0c3"}}>
                         {product.name}
                     </li>
                     
@@ -81,10 +82,15 @@ class Home extends Component {
                                 {product}
                                 
                             </ul>
-                            <Button class="btn btn-sm mt-2" href="https://www.webmd.com/vitamins/ai/ingredientmono-1513/kratom" id="learnMore">Learn More</Button>
+                            <Button class="btn btn-sm mt-2" href="https://www.webmd.com/vitamins/ai/ingredientmono-1513/kratom" id="learnMore" onMouseEnter={(e) => {e.target.style.background = "#3FBF6B"}} onMouseOut={(e) => {e.target.style.background = " #e7f0c3"}}>Learn More</Button>
                     </div>
 
+                    
+
                    
+                </div>
+                <div className="home-text container">
+                <CompCar />
                 </div>
             
 

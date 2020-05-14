@@ -9,7 +9,7 @@ import Footer from './Footer';
 import Home from './Home';
 import Contact from "./Contactus"
 import { Switch, Route, Redirect } from 'react-router-dom';
-import CompCar from './Carousel'
+
 
 
 class Main extends Component {
@@ -41,7 +41,7 @@ class Main extends Component {
                     <Route exact path="/contact" render={() => <Contact />} />
                     <Redirect to="/home" />
                 </Switch>
-                <CompCar />
+                
                 <Footer />
             </div>
         );

@@ -27,7 +27,7 @@ body {
 }
 
 #learnMore {
-  background-color: #3FBF6B;
+  background-color: #e7f0c3;
   border-color: #3FBF6B;
   color: #444;
 }
@@ -189,6 +189,9 @@ a {
 
 .h1-responsive {
   color: black;
+}
+.list-group-item {
+  background: #e7f0c3;
 }
 
 
