@@ -123,7 +123,7 @@ render(){
            
 
 
-            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+            <Modal  isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader toggle={this.toggleModal}>Sign In</ModalHeader>
                 <ModalBody>
 

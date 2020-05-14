@@ -45,9 +45,6 @@ class Cardcapsule extends Component {
                 <div key={capsule.id} className="col-md-3 m-1">
                       <Card onClick={() => { this.onCapsuleSelect( capsule ); this.toggleModal(); }}>
                         <CardImg width="30%" height="30%" src={capsule.image} alt={capsule.name} />
-                        <CardImgOverlay>
-                            <CardTitle>{capsule.name}</CardTitle>
-                        </CardImgOverlay>
                     </Card>
                 </div>
             );
