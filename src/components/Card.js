@@ -57,7 +57,7 @@ class Cardpowder extends Component {
 
                 
                 
-                <div key={powder.id} className="col-md-3 m-1">
+                <div key={powder.id} className="col-md-3 mt-5">
                     <Card onClick={() => { this.onPowderSelect( powder ); this.toggleModal(); }}>
                         <CardImg width="30%" height="30%" src={powder.image} alt={powder.name} />
                     </Card>
@@ -77,7 +77,7 @@ class Cardpowder extends Component {
 
 
            
-            <div className="container">
+            <div className="container card-top">
                 <div className="row">{ powder }</div>
                 
                     <Modal isOpen={this.state.isModalOpen} >
@@ -88,7 +88,7 @@ class Cardpowder extends Component {
 
                                     <FormGroup>
 
-                                       <img src={this.state.selectedPowder.image} width="auto" height="150" alt={this.state.selectedPowder.name}/>
+                                       <img src={this.state.selectedPowder.image} width="auto" height="200" alt={this.state.selectedPowder.name}/>
                                     </FormGroup>
 
                                     <FormGroup>

@@ -42,9 +42,9 @@ class Cardcapsule extends Component {
     render() {
         const capsule = this.props.capsules.map(capsule => {
             return (
-                <div key={capsule.id} className="col-md-3 m-1">
+                <div key={capsule.id} className="col-md-3 mt-5">
                       <Card onClick={() => { this.onCapsuleSelect( capsule ); this.toggleModal(); }}>
-                        <CardImg width="30%" height="30%" src={capsule.image} alt={capsule.name} />
+                        <CardImg width="20%" height="20%" src={capsule.image} alt={capsule.name} />
                     </Card>
                 </div>
             );
@@ -62,7 +62,7 @@ class Cardcapsule extends Component {
 
                                     <FormGroup>
 
-                                       <img src={this.state.selectedCapsule.image} width="auto" height="150" alt={this.state.selectedCapsule.name} />
+                                       <img src={this.state.selectedCapsule.image} width="auto" height="200" alt={this.state.selectedCapsule.name} />
                                     </FormGroup>
 
                                     <FormGroup>

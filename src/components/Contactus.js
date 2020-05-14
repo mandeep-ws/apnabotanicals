@@ -60,9 +60,9 @@ render(){
                             <h4>Have any questions? Lets chat!!!</h4>
                         </Col>
                     </Row>
-                        <Row className="form-group">
-                            <Label htmlFor="firstName" md={1}>Name</Label>
-                            <Col md={10}>
+                        <Row className="form-group mx-1">
+                            <Label htmlFor="firstName" md={2}>Name</Label>
+                            <Col md={8}>
                                 <Control.text model=".firstName" id="firstName" name="name"
                                     placeholder="Your Name"
                                     className="form-control"
@@ -83,9 +83,9 @@ render(){
                                     }} />
                             </Col>
                         </Row>
-                        <Row className="form-group">
-                            <Label htmlFor="email" md={1}>Email</Label>
-                            <Col md={10}>
+                        <Row className="form-group mx-1">
+                            <Label htmlFor="email" md={2}>Email</Label>
+                            <Col md={8}>
                                 <Control.text model=".email" id="email" name="email"
                                     placeholder="Email"
                                     className="form-control"
@@ -104,9 +104,9 @@ render(){
                                     }} />
                             </Col>
                         </Row>
-                        <Row className="form-group">
-                            <Label htmlFor="phoneNum" md={1}>Phone</Label>
-                            <Col md={10}>
+                        <Row className="form-group mx-1">
+                            <Label htmlFor="phoneNum" md={2}>Phone</Label>
+                            <Col md={8}>
                                 <Control.text model=".phoneNum" id="phoneNum" name="phoneNum"
                                     placeholder="Phone number"
                                     className="form-control"
@@ -129,17 +129,17 @@ render(){
                                     }} />
                             </Col>
                         </Row>
-                        <Row className="form-group mx-auto">
-                                <Label htmlFor="feedback" md={1}>Feedback</Label>
-                            <Col md={12}>
+                        <Row className="form-group mx-1">
+                                <Label htmlFor="feedback" md={2}>Feedback</Label>
+                            <Col md={8}>
                                 <Control.textarea model=".feedback" id="feedback" name="feedback"
                                     rows="12"
                                     className="form-control"
                                 />
                             </Col>
                         </Row>
-                        <Row className="form-group mx-auto">
-                            <Col md={{ size: 10, offset: 1 }}>
+                        <Row className="form-group mx-auto mt-3">
+                            <Col md={{ size: 8, offset: 2 }}>
                                 <Button type="submit" color="primary">
                                     Send Feedback
                                     </Button>
