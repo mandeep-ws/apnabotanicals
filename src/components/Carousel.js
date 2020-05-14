@@ -53,7 +53,7 @@ function CompCar(){
 
  
       return (
-        <div className="mt-5 mb-5 text-center">
+        <div className="mt-5 mb-5 text-center d-none d-md-block">
           <style>
             {
               `.custom-tag {
