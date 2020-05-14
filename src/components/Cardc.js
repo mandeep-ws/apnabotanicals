@@ -65,7 +65,7 @@ class Cardcapsule extends Component {
 
                                     <FormGroup>
 
-                                       <img src={this.state.selectedCapsule.image} width="auto" height="150" />
+                                       <img src={this.state.selectedCapsule.image} width="auto" height="150" alt={this.state.selectedCapsule.name} />
                                     </FormGroup>
 
                                     <FormGroup>

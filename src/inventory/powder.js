@@ -4,28 +4,28 @@ export const POWDER = [
         name: "Yellow Kratom ",
         image: "/assets/images/powder/yellow-p1.png",
         featured: false,
-        description: "yellow"
+        description: "Focus and alert"
     },
     {
         id: 1,
         name: "White Kratom ",
         image: "/assets/images/powder/white-p1.png",
         featured: true,
-        description: "white"
+        description: "Attentive and alert"
     },
     {
         id: 2,
         name: "Red Kratom ",
         image: "/assets/images/powder/red-p1.png",
         featured: false,
-        description: "Red"
+        description: "Fast and Furious"
     },
     {
         id: 3,
         name: "Green Kratom ",
         image: "/assets/images/powder/green-p1.png",
         featured: true,
-        description: "green"
+        description: "Energy driven, focusing"
     },
 
     {
@@ -33,7 +33,7 @@ export const POWDER = [
         name: "Gold Kratom ",
         image: "/assets/images/powder/gold-p1.png",
         featured: false,
-        description: "gold"
+        description: "Calming and Soothing"
 
     }
 ];

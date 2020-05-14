@@ -8,13 +8,15 @@ import {
 
 
 
+
+
 class Home extends Component {
 
 
     constructor(props) {
         super(props);
         this.toggleModal = this.toggleModal.bind(this);
-        this.changeBackground = this.changeBackground(this);
+        this.onProductSelect = this.onProductSelect.bind(this);
        
         
         this.state = {
@@ -35,32 +37,21 @@ class Home extends Component {
         this.setState({ selectedProduct: product });
     }
 
-     changeBackground(e) {
-       console.log("isee")
-       //e.target.style.background = 'red';
-      }
 
     render(){
-            console.log(this.changeBackground)
-        const product = this.props.powders.map(powder => {
+          
+        const product = this.props.powders.map(product => {
             return (
 
-                
-                
-                <div key={powder.id} >
-                    <li  className="list-group-item"  onClick={() => { this.toggleModal()}} onMouseEnter={(e) => {e.target.style.background = "#3FBF6B"}} onMouseOut={(e) => {e.target.style.background = " whitesmoke"}}>
-                        <a>{powder.name}</a>
+                <div key={product.id} >
+                    <li  className="list-group-item"  onClick={() =>{ this.onProductSelect( product ); this.toggleModal()}} onMouseEnter={(e) => {e.target.style.background = "#3FBF6B"}} onMouseOut={(e) => {e.target.style.background = " whitesmoke"}}>
+                        {product.name}
                     </li>
                     
-                </div>
-
-                
-                   
-            );
+                </div>);
         }
         );
-
-
+    
         return (
        
             <div className="container text-center home-text">
@@ -73,7 +64,7 @@ class Home extends Component {
                         </p>
                     </div>
                     <div class="col-sm-6">
-                        <img id="Kratom-img" src="/assets/images/Kratom-Strains-2.jpg" />
+                        <img id="Kratom-img" src="/assets/images/Kratom-Strains-2.jpg" alt="Kratom"/>
                     </div>
                 </div>
                 <div class="row">
@@ -90,8 +81,10 @@ class Home extends Component {
                                 {product}
                                 
                             </ul>
-                            <a class="btn btn-sm mt-2" href="https://www.webmd.com/vitamins/ai/ingredientmono-1513/kratom" id="learnMore">Learn More</a>
+                            <Button class="btn btn-sm mt-2" href="https://www.webmd.com/vitamins/ai/ingredientmono-1513/kratom" id="learnMore">Learn More</Button>
                     </div>
+
+                   
                 </div>
             
 
@@ -103,11 +96,10 @@ class Home extends Component {
 
                                     <FormGroup>
 
-                                       <img src="" width="auto" height="150" />
+                                       <img src={this.state.selectedProduct.image} width="auto" height="150" alt={this.state.selectedProduct.name} />
                                     </FormGroup>
-
                                     <FormGroup>
-                                        <p></p>
+                                        <p>{this.state.selectedProduct.name}</p>
                                     </FormGroup>
                                     <Button type="submit" value="submit" color="primary">Add to Cart</Button>
                                 </Form>

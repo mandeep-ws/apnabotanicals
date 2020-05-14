@@ -81,6 +81,7 @@ a {
 
 .home-text{
   margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .navbar li {
@@ -123,7 +124,7 @@ a {
 }
 
 .site-footer {
-  margin-top: 20px;
+  margin-top: 100px;
   background-color: #3FBF6B;
   padding: 20px;
   color: black;
@@ -189,6 +190,8 @@ a {
 .h1-responsive {
   color: black;
 }
+
+
 
 /*.car-butt {
   background-color: green;

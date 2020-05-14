@@ -88,7 +88,7 @@ class Cardpowder extends Component {
 
                                     <FormGroup>
 
-                                       <img src={this.state.selectedPowder.image} width="auto" height="150" />
+                                       <img src={this.state.selectedPowder.image} width="auto" height="150" alt={this.state.selectedPowder.name}/>
                                     </FormGroup>
 
                                     <FormGroup>
