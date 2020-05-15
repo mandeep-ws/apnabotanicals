@@ -3,7 +3,7 @@ import {
     Card,
     CardImg,
     CardImgOverlay,
-    CardTitle,
+    CardTitle,CardText,CardBody,
     Modal, ModalHeader, ModalBody, Button,
     Form, FormGroup
 } from "reactstrap";
@@ -43,8 +43,16 @@ class Cardcapsule extends Component {
         const capsule = this.props.capsules.map(capsule => {
             return (
                 <div key={capsule.id} className="col-md-3 mt-5">
-                      <Card onClick={() => { this.onCapsuleSelect( capsule ); this.toggleModal(); }}>
+                      <Card className="text-center card-body" onClick={() => { this.onCapsuleSelect( capsule ); this.toggleModal(); }}>
                         <CardImg width="20%" height="20%" src={capsule.image} alt={capsule.name} />
+                        <CardImgOverlay>
+
+                        </CardImgOverlay>
+                        <CardBody text-center>
+                            <CardText>{capsule.name} - {capsule.description}</CardText>
+                            <Button color="info">Shop</Button>
+                          
+                        </CardBody>
                     </Card>
                 </div>
             );

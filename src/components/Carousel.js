@@ -58,7 +58,7 @@ function CompCar(){
             {
               `.custom-tag {
                 max-width: 100%;
-                 background: #e7f0c3;
+                 background: #3FBF6B;
                 }`
             }
           </style>
@@ -71,6 +71,16 @@ function CompCar(){
                     }`
                 }
 
+          </style>
+
+          <style>
+          {
+          
+          `.custom-tag:hover {
+                    max-width: 100%;
+                     background: #3FBF6B;
+                    }`
+            }
           </style>
           <Carousel
             activeIndex={activeIndex}

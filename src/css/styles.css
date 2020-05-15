@@ -195,6 +195,14 @@ a {
   background: #e7f0c3;
 }
 
+.card-body {
+  background-color: #e7f0c3;
+}
+
+.card-body:hover { 
+  background: #3FBF6B;
+}
+
 
 
 /*.car-butt {

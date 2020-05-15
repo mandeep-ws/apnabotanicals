@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import {
     Card,
     CardImg,
+    CardImgOverlay,
+    CardText,CardLink,CardBody,
   
     Modal, ModalHeader, ModalBody, Button,
     Form, FormGroup, 
@@ -58,8 +60,16 @@ class Cardpowder extends Component {
                 
                 
                 <div key={powder.id} className="col-md-3 mt-5">
-                    <Card onClick={() => { this.onPowderSelect( powder ); this.toggleModal(); }}>
+                    <Card className="text-center card-body" onClick={() => { this.onPowderSelect( powder ); this.toggleModal(); }} >
                         <CardImg width="30%" height="30%" src={powder.image} alt={powder.name} />
+                        <CardImgOverlay>
+                        
+                        </CardImgOverlay>
+                        <CardBody text-center>
+                            <CardText>{powder.name} - {powder.description}</CardText>
+                            <Button color="info">Shop</Button>
+                          
+                        </CardBody>
                     </Card>
                     
 
@@ -80,21 +90,22 @@ class Cardpowder extends Component {
             <div className="container card-top">
                 <div className="row">{ powder }</div>
                 
-                    <Modal isOpen={this.state.isModalOpen} >
-                            <ModalHeader toggle={this.toggleModal} >Product Info</ModalHeader>
+                    <Modal className="text-center" isOpen={this.state.isModalOpen} >
+                            <ModalHeader  toggle={this.toggleModal} >Product Info</ModalHeader>
                             <ModalBody>
 
                                 <Form onSubmit={this.handleLogin}>
 
-                                    <FormGroup>
+                                    <FormGroup >
 
                                        <img src={this.state.selectedPowder.image} width="auto" height="200" alt={this.state.selectedPowder.name}/>
+                                       <p >{this.state.selectedPowder.name}</p>
                                     </FormGroup>
 
-                                    <FormGroup>
-                                        <p>{this.state.selectedPowder.description}</p>
+                                    <FormGroup >
+                                    <p >{this.state.selectedPowder.description}</p>
                                     </FormGroup>
-                                    <Button type="submit" value="submit" color="primary">Add to Cart</Button>
+                                    <Button  type="submit" value="submit" color="primary">Add to Cart</Button>
                                 </Form>
 
                             </ModalBody>
